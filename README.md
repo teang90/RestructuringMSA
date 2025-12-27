@@ -17,9 +17,9 @@
   - 불필요한 시스템 중복 제거 및 서비스 통합 효과
 
 - **유지보수 포인트 감소**  
-  - 레거시 시스템 통합 과정에서
+  - 레거시 시스템 통합
     - 중복 코드 제거
-    - 불필요한 구조 및 DB 이력 정리
+    - 불필요한 구조 및 DB 정리
   - 코드 복잡도 및 운영 리스크 감소
 
 ---
@@ -32,24 +32,24 @@
 - Core Domain과 외부 시스템(REST, MQ, DB, Cache) 간 의존성 분리
 <img width="1517" height="772" alt="image" src="https://github.com/user-attachments/assets/c246ea90-f0f8-4dd4-86c9-bb9f6756a499" />
 
-> ※ 본 프로젝트에서는 제가 담당한 모듈을 중심으로 아키텍처를 구성하여 설명합니다.
+> ※ 본 프로젝트에서는 제가 담당한 모듈(붉은색 글씨)을 중심으로 아키텍처를 재구성했습니다.
 
 ---
 
 ### 4. 기술 스택
 
-- **Language / Runtime**
+- **언어**
   - JDK 17
 
-- **Framework / Network**
+- **프레임워크**
   - Spring Boot 3.x
   - Netty 4.x
 
-- **Messaging / Streaming**
+- **미들웨어**
   - Kafka
   - Apache Artemis
 
-- **Data / Cache**
+- **DB**
   - Redis
   - MongoDB
   - Altibase
@@ -74,5 +74,5 @@
 
 레거시 중심의 복잡한 구조를 MSA 기반으로 재설계하여  
 **운영 리소스와 유지보수 비용을 크게 절감**하였으며,  
-이벤트 기반 비동기 처리와 Redis 캐시 활용을 통해  
+이벤트 기반 비동기 처리와 Redis를 활용을 통해  
 **트랜잭션 처리 안정성과 확장성을 확보한 프로젝트입니다.**
