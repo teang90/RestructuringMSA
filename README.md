@@ -28,7 +28,7 @@
 
 - MSA 기반 서비스 분리 구조
 - 이벤트 기반 비동기 처리
-- Hexagonal Architecture(Ports & Adapters) 적용
+- 외부 연동용 어댑터 모듈 적용
 - Core Domain과 외부 시스템(REST, MQ, DB, Cache) 간 의존성 분리
 <img width="1517" height="772" alt="image" src="https://github.com/user-attachments/assets/c246ea90-f0f8-4dd4-86c9-bb9f6756a499" />
 
